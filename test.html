@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .menu-item {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .menu-item:hover {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .menu-image {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+        }
+        .menu-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .menu-price {
+            color: #d4413a;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .menu-description {
+            color: #666;
+            font-size: 0.8rem;
+            margin-bottom: 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: #d4413a;
+        }
+        @media (max-width: 576px) {
+            .menu-image {
+                height: 100px;
+            }
+            .menu-item {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <h2 class="section-title">Signature Menu</h2>
+        
+        <div class="row g-2">
+            <!-- Modified grid classes to show 2 items per row on all screen sizes -->
+            
+            <!-- Snack Meal -->
+            <div class="col-6 col-lg-4">
+                <div class="menu-item">
+                    <img src="upload/238E6F3800000578-2851992-image-3_1417106023786-150x150.jpg" alt="Snack Meal" class="menu-image">
+                    <div class="menu-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="menu-title mb-0">Snack Meal</h5>
+                            <span class="menu-price">₹180/-</span>
+                        </div>
+                        <p class="menu-description mt-2">2 pcs Chicken / S. Fries 1 Bun / 1 Garlic Paste</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dinner Meal -->
+            <div class="col-6 col-lg-4">
+                <div class="menu-item">
+                    <img src="upload/Kimchi-Ramen-35-1024x682-150x150.jpg" alt="Dinner Meal" class="menu-image">
+                    <div class="menu-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="menu-title mb-0">Dinner Meal</h5>
+                            <span class="menu-price">₹360/-</span>
+                        </div>
+                        <p class="menu-description mt-2">4 pcs Chicken / S. Fries 2 Bun / 2 Garlic Paste / 1 Coleslaw</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Family Box -->
+            <div class="col-6 col-lg-4">
+                <div class="menu-item">
+                    <img src="upload/Shakshouka-Tanya-Zouev-150x150.jpg" alt="Family Box" class="menu-image">
+                    <div class="menu-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="menu-title mb-0">Family Box</h5>
+                            <span class="menu-price">₹699/-</span>
+                        </div>
+                        <p class="menu-description mt-2">9 Pcs Chicken / L.Fries 4 Bun / 4 Garlic Paste / 1 Coleslaw</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Veg Nuggets -->
+            <div class="col-6 col-lg-4">
+                <div class="menu-item">
+                    <img src="upload/Shakshouka-Tanya-Zouev-150x150.jpg" alt="Veg Nuggets" class="menu-image">
+                    <div class="menu-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="menu-title mb-0">Veg Nuggets</h5>
+                            <span class="menu-price">₹90/-</span>
+                        </div>
+                        <p class="menu-description mt-2">8 Pcs Chicken</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chicken Nuggets -->
+            <div class="col-6 col-lg-4">
+                <div class="menu-item">
+                    <img src="upload/Shakshouka-Tanya-Zouev-150x150.jpg" alt="Chicken Nuggets" class="menu-image">
+                    <div class="menu-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="menu-title mb-0">Chicken Nuggets</h5>
+                            <span class="menu-price">₹100/-</span>
+                        </div>
+                        <p class="menu-description mt-2">8 Pcs Chicken</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Al-Faham -->
+            <div class="col-6 col-lg-4">
+                <div class="menu-item">
+                    <img src="upload/Shakshouka-Tanya-Zouev-150x150.jpg" alt="Al-Faham" class="menu-image">
+                    <div class="menu-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="menu-title mb-0">Al-Faham</h5>
+                            <span class="menu-price">₹100/-</span>
+                        </div>
+                        <p class="menu-description mt-2">Al-Faham(F) ₹480 / Piri(F) ₹520/ Al-Faham Chest(Q) ₹130</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
